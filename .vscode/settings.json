@@ -1,0 +1,7 @@
+{
+    "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
+    "editor.wordWrap": "bounded",
+    "editor.rulers": [
+        80
+    ]
+}
