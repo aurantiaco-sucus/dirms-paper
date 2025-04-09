@@ -1,0 +1,68 @@
+%!TEX program = xelatex
+
+
+% 要使用biber后端
+% 要使用xelatex编译
+\documentclass[a4paper,12pt]{article}%A4纸，正文为小四号字，对应12pt
+
+% 设置字体
+\usepackage{fontspec}
+\usepackage[BoldFont,SlantFont,CJKchecksingle]{xeCJK}
+\usepackage{ctex}
+ 
+
+\setCJKmainfont{SimSun}[Path=./fonts/, Extension=.ttf]
+\setCJKmonofont{SimSun}[Path=./fonts/, Extension=.ttf]% 设置缺省中文字体为宋体
+
+\usepackage{diagbox}
+\usepackage{multido}
+\usepackage{float}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+
+
+\usepackage[backend=biber,style=gb7714-2015]{biblatex}
+\addbibresource{reference.bib} % 替换为你的 .bib 文件
+
+
+\usepackage{广州大学毕业论文模板}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{AI驱动的零售商品全流程管理系统设计与实现}% 输入论文题目
+\school{计算机科学与软件工程学院}%学院
+%\xibie{系别}%系别
+\major{软件工程} %专业
+\class{软件（创）211}%班级
+\author{张景致}%作者
+\studentnumber{32106300004}%学号
+\supervisor{闫红洋}%导师姓名
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\input{0-cover-abstract.tex}
+
+\tableofcontents % 生成目录
+\newpage
+
+
+\input{1-introduction.tex}
+
+\input{chapter01.tex}
+
+\input{chapter02}
+
+\input{结论}
+
+\printbibliography[heading=bibintoc]
+\input{致谢.tex}
+
+\end{document}
