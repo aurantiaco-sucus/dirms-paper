@@ -1,0 +1,76 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.5.0 Safari/537.36" version="26.1.1">
+  <diagram name="第 1 页" id="mEoKK4Uc_t7VMLdJ_GDj">
+    <mxGraphModel dx="1114" dy="984" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-1" value="Tanxun&lt;br&gt;&lt;div&gt;关键词搜索引擎&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="100" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-3" value="RmService&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;中心服务器&lt;/span&gt;" style="swimlane;whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;startSize=20;arcSize=15;" vertex="1" parent="1">
+          <mxGeometry x="240" y="40" width="220" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-8" value="商品信息" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DNXl8TowQ_0y9zwjj9b5-3">
+          <mxGeometry x="10" y="30" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-9" value="进销存" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DNXl8TowQ_0y9zwjj9b5-3">
+          <mxGeometry x="10" y="70" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-10" value="图像处理" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DNXl8TowQ_0y9zwjj9b5-3">
+          <mxGeometry x="10" y="50" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-11" value="条码匹配" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DNXl8TowQ_0y9zwjj9b5-3">
+          <mxGeometry x="10" y="90" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-12" value="结算" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DNXl8TowQ_0y9zwjj9b5-3">
+          <mxGeometry x="10" y="110" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-13" value="大模型托管" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DNXl8TowQ_0y9zwjj9b5-3">
+          <mxGeometry x="110" y="30" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-14" value="推荐商品" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DNXl8TowQ_0y9zwjj9b5-3">
+          <mxGeometry x="110" y="50" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-15" value="关键词搜索" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DNXl8TowQ_0y9zwjj9b5-3">
+          <mxGeometry x="110" y="70" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-16" value="仓储审计" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DNXl8TowQ_0y9zwjj9b5-3">
+          <mxGeometry x="110" y="90" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-17" value="销售数据收集" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="DNXl8TowQ_0y9zwjj9b5-3">
+          <mxGeometry x="110" y="110" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-4" value="RmCore&lt;div&gt;基础数据结构库&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="100" y="40" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-6" value="RmGuard&lt;br&gt;&lt;div&gt;运行时依赖管理&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="340" y="190" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-7" value="RmInit&lt;div&gt;服务器自动部署&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="210" y="190" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-18" value="rqlite&lt;div&gt;关系数据库系统&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="100" y="140" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-19" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="DNXl8TowQ_0y9zwjj9b5-3" target="DNXl8TowQ_0y9zwjj9b5-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="320" as="sourcePoint" />
+            <mxPoint x="270" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="DNXl8TowQ_0y9zwjj9b5-3" target="DNXl8TowQ_0y9zwjj9b5-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="310" as="sourcePoint" />
+            <mxPoint x="280" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DNXl8TowQ_0y9zwjj9b5-24" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="DNXl8TowQ_0y9zwjj9b5-3" target="DNXl8TowQ_0y9zwjj9b5-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="280" as="sourcePoint" />
+            <mxPoint x="300" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

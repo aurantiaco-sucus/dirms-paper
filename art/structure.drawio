@@ -1,0 +1,274 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.5.0 Safari/537.36" version="26.1.1">
+  <diagram name="第 1 页" id="qZBS6BFGT_fbDx9XYUuw">
+    <mxGraphModel dx="1120" dy="979" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="apDv6MEX-A2CdWdYZprh-1" value="后端服务器&lt;div&gt;Rust，axum&lt;div&gt;RmService&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-2" value="零售管理&lt;div&gt;C++，Qt&lt;/div&gt;&lt;div&gt;&lt;div&gt;RmAdmin&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-3" value="业绩分析&lt;div&gt;Python，NiceGUI&lt;/div&gt;&lt;div&gt;RmAnalysis&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-4" value="模块名字&lt;div&gt;技术路线&lt;br&gt;&lt;div&gt;程序名字&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-8" value="结算&lt;div&gt;Rust，iced&lt;/div&gt;&lt;div&gt;EasyCheckout&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="450" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-10" value="管理者手机 App&lt;div&gt;Kotlin，Jetpack&lt;/div&gt;&lt;div&gt;ShopEyes Owner&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-12" value="关键词搜索引擎&lt;div&gt;Rust&lt;/div&gt;&lt;div&gt;“探寻”&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-13" value="功能模块" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="50" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-14" value="一键部署助手&lt;div&gt;Rust&lt;/div&gt;&lt;div&gt;RmInit&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-15" value="称重模块&lt;div&gt;Rust，C++，PlatformIO&lt;/div&gt;&lt;div&gt;（无名）&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="570" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-19" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-1" target="apDv6MEX-A2CdWdYZprh-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="420" as="sourcePoint" />
+            <mxPoint x="550" y="370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-20" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-1" target="apDv6MEX-A2CdWdYZprh-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="590" as="sourcePoint" />
+            <mxPoint x="350" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-21" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-1" target="apDv6MEX-A2CdWdYZprh-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="460" as="sourcePoint" />
+            <mxPoint x="470" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-22" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-1" target="apDv6MEX-A2CdWdYZprh-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="500" as="sourcePoint" />
+            <mxPoint x="370" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-25" value="商品识别模块&lt;div&gt;Python，PyTorch，YOLO&lt;/div&gt;&lt;div&gt;yolod&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="800" y="460" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-29" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-1" target="apDv6MEX-A2CdWdYZprh-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="590" as="sourcePoint" />
+            <mxPoint x="240" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-30" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-1" target="apDv6MEX-A2CdWdYZprh-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="570" as="sourcePoint" />
+            <mxPoint x="310" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-31" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-8" target="apDv6MEX-A2CdWdYZprh-15">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="700" as="sourcePoint" />
+            <mxPoint x="740" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-32" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-8" target="apDv6MEX-A2CdWdYZprh-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="740" as="sourcePoint" />
+            <mxPoint x="820" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-33" value="YOLO数据集管理&lt;div&gt;Rust，iced&lt;/div&gt;&lt;div&gt;EasyDataset&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="880" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-34" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-33" target="apDv6MEX-A2CdWdYZprh-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="850" as="sourcePoint" />
+            <mxPoint x="980" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-35" value="服务器守护者&lt;div&gt;Rust&lt;/div&gt;&lt;div&gt;RmGuard&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-36" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-1" target="apDv6MEX-A2CdWdYZprh-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="640" as="sourcePoint" />
+            <mxPoint x="370" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-37" value="云服务" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="288" y="40" width="126" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-38" value="阿里云“百炼”&lt;div&gt;AI推理服务&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="190" width="126" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-39" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-1" target="apDv6MEX-A2CdWdYZprh-38">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="590" as="sourcePoint" />
+            <mxPoint x="310" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-40" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="470" y="90" as="sourcePoint" />
+            <mxPoint x="520" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-41" value="“依赖于”&lt;div&gt;或者“具有”&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-42" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="90" as="sourcePoint" />
+            <mxPoint x="600" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-44" value="关联" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-45" value="AI推理管理模块&lt;div&gt;Rust&lt;/div&gt;&lt;div&gt;manyshot&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="505" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-46" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-1" target="apDv6MEX-A2CdWdYZprh-45">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="480" as="sourcePoint" />
+            <mxPoint x="330" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-47" value="商品管理" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="670" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-48" value="库存管理" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="670" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-49" value="AI图像识别" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="900" y="565" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-50" value="AI商品文案" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="610" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-55" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-2" target="apDv6MEX-A2CdWdYZprh-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="760" as="sourcePoint" />
+            <mxPoint x="260" y="710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-56" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-2" target="apDv6MEX-A2CdWdYZprh-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="330" y="830" as="sourcePoint" />
+            <mxPoint x="380" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-57" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-2" target="apDv6MEX-A2CdWdYZprh-48">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="870" as="sourcePoint" />
+            <mxPoint x="530" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-59" value="&lt;div&gt;（点货）&lt;/div&gt;AI条码识别" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="160" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-60" value="消费者手机 App&lt;div&gt;Kotlin，Jetpack&lt;/div&gt;&lt;div&gt;ShopEyes Guest&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-61" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-25" target="apDv6MEX-A2CdWdYZprh-49">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1010" y="690" as="sourcePoint" />
+            <mxPoint x="1060" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-62" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-1" target="apDv6MEX-A2CdWdYZprh-60">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="362" as="sourcePoint" />
+            <mxPoint x="570" y="298" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-63" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-10" target="apDv6MEX-A2CdWdYZprh-59">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="310" as="sourcePoint" />
+            <mxPoint x="800" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-65" value="&lt;div&gt;拍照上传&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-66" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="apDv6MEX-A2CdWdYZprh-65">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="259" as="sourcePoint" />
+            <mxPoint x="920" y="259" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-67" value="&lt;div&gt;AI商品推荐&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="310" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-68" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-60" target="apDv6MEX-A2CdWdYZprh-67">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="730" y="410" as="sourcePoint" />
+            <mxPoint x="780" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-70" value="商品检索" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="735" y="380" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-71" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-60" target="apDv6MEX-A2CdWdYZprh-70">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="900" y="370" as="sourcePoint" />
+            <mxPoint x="950" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-73" value="关键词整理" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="575" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-74" value="AI分词" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="640" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-75" value="AI近义词发现" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="615" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-76" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-12" target="apDv6MEX-A2CdWdYZprh-73">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="630" as="sourcePoint" />
+            <mxPoint x="240" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-77" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-12" target="apDv6MEX-A2CdWdYZprh-74">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="620" as="sourcePoint" />
+            <mxPoint x="240" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-78" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-12" target="apDv6MEX-A2CdWdYZprh-75">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="610" as="sourcePoint" />
+            <mxPoint x="280" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-80" value="AI图表分析" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="140" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-81" value="AI运营建议" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="140" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-82" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-3" target="apDv6MEX-A2CdWdYZprh-81">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="270" as="sourcePoint" />
+            <mxPoint x="540" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="apDv6MEX-A2CdWdYZprh-83" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="apDv6MEX-A2CdWdYZprh-3" target="apDv6MEX-A2CdWdYZprh-80">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="370" as="sourcePoint" />
+            <mxPoint x="540" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
