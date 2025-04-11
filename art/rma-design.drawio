@@ -1,0 +1,76 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.5.0 Safari/537.36" version="26.1.1">
+  <diagram name="第 1 页" id="sRh7GxcKh70PubXgSeGX">
+    <mxGraphModel dx="626" dy="566" grid="1" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-1" value="窗口标题" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-2" value="文档标签栏" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="70" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-3" value="内容区域" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="120" y="100" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-4" value="侧边面板" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-5" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="300" y="70" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-6" value="" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="320" y="90" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-7" value="标签页内容" style="rounded=0;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="340" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-8" value="主页" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="300" y="40" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-9" value="商品管理" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="350" y="60" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-10" value="商品编辑" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-11" value="全部满足" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="80" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-12" value="条件A" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="50" y="270" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-13" value="条件B" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-22" value="全部满足" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="140" y="240" width="80" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-17" value="全不满足" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="150" y="270" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-23" value="条件C" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="160" y="300" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-24" value="条件D" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="150" y="340" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-25" value="侧边标签栏" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=14;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="40" y="170" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-27" value="存在满足" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="240" y="240" width="80" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-28" value="全不满足" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="250" y="270" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-29" value="条件E" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="260" y="300" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="E0Bqm-VQgLrk9pqsz4GP-30" value="条件F" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" vertex="1" parent="1">
+          <mxGeometry x="250" y="340" width="60" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
