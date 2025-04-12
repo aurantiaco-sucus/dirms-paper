@@ -68,9 +68,43 @@
 
 \subsection{管理界面}
 
-\subsubsection{商品管理}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{./imgs/rma-design-layout.png}
+	\caption{左侧：桌面商家端的用户界面布局；右侧：多个文档标签的实例}
+	\label{fig:rma-design-layout}
+\end{figure}
 
-\subsubsection{库存管理}
+为了充分利用面向桌面型计算机开发的应用程序的操作效率高的特性，管理界面模块采用如图 \ref{fig:rma-design-layout} 所示的按标签页分文档的UI组织方式，其中大部分标签页采用主要内容板块加侧边栏展示额外信息的布局方式，以增强对键盘鼠标操作的友好性。鉴于许多种类的零售业务资料可以被抽象为同一种类型的多个不同实例，并且具有同样的对理解数据内容较为重要的字段（如名称、说明），故决定以表格方式对其进行整理。管理界面具备如下的功能：
+
+\begin{itemize}
+	\item 商品管理
+	\begin{itemize}
+		\item 创建或编辑商品
+		\item 检索、查看和管理既有商品
+	\end{itemize}
+	\item 库存管理
+	\begin{itemize}
+		\item 管理、预览和执行进货计划
+		\item 查看仓储情况
+		\item 管理仓储审计批次
+	\end{itemize}
+	\item 编辑推荐商品
+	\item 管理商品图片
+\end{itemize}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth]{./imgs/rma-tables.png}
+	\caption{用于表格组件的模型类继承关系：灰色框代表第三方库或开发环境带有的类，箭头指向子类或者实现该接口的类。}
+	\label{fig:rma-tables}
+\end{figure}
+
+不同表格模型（向表格组件提供数据的对象）类之间的继承关系如图 \ref{fig:rma-tables} 所示,其中 \verb|MutableListListModel| 和 \verb|MutableListTableModel| 在表格模型中整合了可变不定长数组的特性，可以将开发模型中的对象数组与对应对象集合在UI上的展示相同步，避免繁重的界面开发任务，以此简化数据映射的开发复杂程度。
+
+此外，管理界面的许多作为既有信息展示方法的表格组件还具备通过键盘快捷键或右键菜单进行搜索结果整理、复制或粘贴的功能，从业者可以通过在不同的搜索结果、功能模块之间粘贴剪贴板中编码的对象引用来实现较为复杂的查询和修改。例如若需要查询某几种商品的库存情况，可以首先在“商品管理”中对所需商品进行检索，再在该界面内复制所需商品，在库存查询界面粘贴，即可查看对应的库存情况；若需要在编辑商品信息的过程
+
+\subsubsection{高级搜索}
 
 \subsubsection{营业数据统计}
 
