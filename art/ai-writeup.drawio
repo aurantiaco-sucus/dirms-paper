@@ -1,0 +1,96 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.5.0 Safari/537.36" version="26.1.1">
+  <diagram name="第 1 页" id="V6AbrWOj-tT6SPellIXT">
+    <mxGraphModel dx="1925" dy="683" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-41" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="420" width="320" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-39" value="" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="180" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-32" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="180" width="430" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ix3gC0JZ39K9BvifyMsL-4" target="Ix3gC0JZ39K9BvifyMsL-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-4" value="生成图片描述" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="-110" y="280" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ix3gC0JZ39K9BvifyMsL-6" target="Ix3gC0JZ39K9BvifyMsL-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-6" value="商品图片" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="280" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ix3gC0JZ39K9BvifyMsL-7" target="Ix3gC0JZ39K9BvifyMsL-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-7" value="商品图片描述" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.1875;" vertex="1" parent="1">
+          <mxGeometry x="30" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ix3gC0JZ39K9BvifyMsL-10" target="Ix3gC0JZ39K9BvifyMsL-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-10" value="生成商品描述" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ix3gC0JZ39K9BvifyMsL-12" target="Ix3gC0JZ39K9BvifyMsL-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="460" />
+              <mxPoint x="180" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-12" value="商品描述" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="40" y="440" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ix3gC0JZ39K9BvifyMsL-14" target="Ix3gC0JZ39K9BvifyMsL-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-14" value="生成商品标题" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="220" y="360" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-16" value="商品标题" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="220" y="440" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-33" value="或" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=18;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="140" y="160" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-34" value="商品特征说明" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.1875;" vertex="1" parent="1">
+          <mxGeometry x="170" y="280" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ix3gC0JZ39K9BvifyMsL-35" target="Ix3gC0JZ39K9BvifyMsL-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-35" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;用户提供" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=13;arcSize=11;" vertex="1" parent="1">
+          <mxGeometry x="-250" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-38" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ix3gC0JZ39K9BvifyMsL-37" target="Ix3gC0JZ39K9BvifyMsL-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-37" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;用户提供" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=13;arcSize=11;" vertex="1" parent="1">
+          <mxGeometry x="180" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-40" value="" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Ix3gC0JZ39K9BvifyMsL-34" target="Ix3gC0JZ39K9BvifyMsL-39">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="330" as="sourcePoint" />
+            <mxPoint x="440" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-43" value="AI根据商品图片编写描述" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-270" y="160" width="140" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-44" value="用户提供描述" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="210" y="160" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ix3gC0JZ39K9BvifyMsL-45" value="最终生成结果" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="500" width="90" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
