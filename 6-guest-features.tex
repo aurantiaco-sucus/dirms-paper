@@ -67,7 +67,7 @@ AI导购专家实质上就是扮演导购身份，可以与用户进行多轮对
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth, height=0.3\textheight, keepaspectratio]{./imgs/se-assist.png}
-	\caption{最终消费者导购操作流程}
+	\caption{AI导购用户界面}
 	\label{fig:se-assist}
 \end{figure}
 
@@ -115,12 +115,21 @@ AI导购专家实质上就是扮演导购身份，可以与用户进行多轮对
 
 \subsection{模糊搜索}
 
+本设计所包含模糊搜索引擎“探寻”是一个以分词技术为基础，以大语言模型生成近义词作为词典拓展手段开发的、为中文优化的文本关键词模式匹配子系统。该子系统包括用于商品数据处理、AI近义词搜寻、词典构建的脚本和部署在第 \ref{sec:foundation} 部分的搜索算法四个部分。
 
+\subsubsection{商品词典}
 
-\subsubsection{商品数据处理}
+商品的搜索实质上是检测商品的标题或说明之中是否含有搜索语句相关模式（词语），同时匹配程度（模式命中次数）较高者更可能符合搜索语句对应语义。在这种情况下，任意一次命中于原文中的位置语义上并无作用，故输出匹配位置的字符串搜索算法并不适合该用途。同时，这也意味着可以快速检测模式是否存在而不包含模式位置相关信息的词典（dictionary）是最适合该用途的数据结构。为了更好传达算法的思想，现列出并解释下文将要直接使用的一些操作：
+
+\begin{itemize}
+	\item \textbf{过滤文字：}该操作接受一个字符串，并返回该字符串移除除了Unicode规范\cite{unicode16.0}所定义的拉丁文字（Latin）、汉字（Han）、假名（Hiragana、Katakana）和谚文（Hangul）以外的文字的版本。
+	\item \textbf{扁平化：}该操作接受一个由同元素类型可空集合组成的可空集合，并返回一个由所有原集合中子集合所包含的元素组成的新集合。
+\end{itemize}
+
+以下为生成词典数据结构算法所对应的伪代码：
 
 \subsubsection{AI近义词搜寻}
 
-\subsubsection{词典构建}
+\subsubsection{近义词词典}
 
 \subsubsection{搜索算法}
