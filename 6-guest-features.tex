@@ -163,6 +163,9 @@ AI导购专家实质上就是扮演导购身份，可以与用户进行多轮对
 		\STATE $y \gets y \cup \{s\}$
 	\ENDFOR
 \end{algorithmic}
+\vspace{1em}
+
+由此可知该算法对商品的名称和说明都进行了分词操作，并将分词结果整合为一个序列，按输入的（商品）顺序进行分类，便于后续处理。
 
 \subsubsection{AI近义词搜寻}
 
@@ -173,8 +176,68 @@ AI导购专家实质上就是扮演导购身份，可以与用户进行多轮对
 	\item[]（原词语）
 \end{itemize}
 
-通过在所有词语上重复该操作，并指定模型输出格式（schema）为JSON字符串数组，可以获得每个词语对应的近义词集合。此外，通过多次执行在所有词语上的遍历可以增加获得到的近义词集合的大小。
+通过在所有词语上重复该操作，并指定模型输出格式（schema）为JSON字符串数组，可以获得每个词语对应的近义词集合。此外，通过多次执行在所有词语上的遍历可以增加获得到的近义词集合的大小。值得注意的是，这种方法一定程度上依赖于模型对指令的遵从能力，并且生成的词语可能需要进一步分词、过滤操作才能用于后续处理。
 
 \subsubsection{近义词词典}
 
+现定义类型“近义词词典”为从词汇到其近义词集合的映射。为了便于实现搜索算法，现定义任何一个词语都是其本身的近义词，因此近义词词典的初始化方法是获取词典中的全部词语，并构建一个对全部词语，以该词语作为输入得到只有这个词语一个元素的集合的映射。生成近义词词典算法如下：
+
+\vspace{1em}
+\begin{algorithmic}
+	\STATE \textbf{输入：}AI模型生成的近义词词典 $x_1$ ；词典 $x_2$
+	\STATE \textbf{输出：}近义词词典 $y$
+	\STATE $y \gets \emptyset$
+	\FOR {\textbf{each key} $k$ \textbf{in} $x_2$}
+		\STATE $y(k) \gets \{k\}$
+	\ENDFOR
+	\STATE $\hat{y} \gets \{x \mid \exists y(x), \lvert x \rvert \geq 4 \}$
+	\FOR {\textbf{each key} $k$ \textbf{in} $y$}
+		\STATE $\hat{y}_k \gets \{x \in \hat{y} \mid k \supset x \}$
+		\STATE $y(k) \gets y(k) \cup F_e(\{y(x) \mid x \in \hat{y}_k\})$
+	\ENDFOR
+	\FOR {\textbf{each key} $k$ \textbf{in} $y$ \textbf{if} $\lvert k \rvert \geq 4$ \textbf{and} $x_1$}
+		\FOR {\textbf{each} $v$ \textbf{in} $y(k)$}
+			\IF {$\nexists y(v)$}
+				\STATE $y(v) \gets \emptyset$
+			\ENDIF
+			\STATE $y(v) \gets y(v) \cup \{k\}$
+		\ENDFOR
+	\ENDFOR
+\end{algorithmic}
+\vspace{1em}
+
+从算法上可以看到，首先 $y$ 被初始化为词语到其本身的映射，而后对任何字节长度大于4（一般可视为大于两个中文字符）的字符串，任何被其包含的其他词语对应的近义词都会被添加到该词语对应的近义词集合中（以弥补潜在分词不够细致的问题）。而后同样对任何字节长度大于4的词语其本身都将被添加到其每个近义词对应的近义词集合中，同时将会将这些词语添加为AI生成的近义词词典中对应近义词的近义词集合中。
+
 \subsubsection{搜索算法}
+
+在部署到服务器的搜索算法中，顾客发出的搜索语句首先会被分词和过滤，经过这些操作之后剩余的词语将会被用于实际匹配，搜索算法如下：
+
+\vspace{1em}
+\begin{algorithmic}
+	\STATE \textbf{输入：}近义词词典 $s$ ；词典 $d$ ；搜索词集合 $x$
+	\STATE \textbf{输出：}按匹配程度排序的商品编号序列 $y$
+	\STATE $f \gets \emptyset$
+	\FOR {\textbf{each} $w$ \textbf{in} $x$}
+		\IF {$\exists s(w)$}
+			\STATE \textbf{continue}
+		\ENDIF
+		\STATE $a \gets s(w)$
+		\FOR {\textbf{each} $\hat{w}$ \textbf{in} $a$}
+			\IF {$\exists d(\hat{w})$}
+				\STATE \textbf{continue}
+			\ENDIF
+			\STATE $m \gets d(\hat{w})$
+			\FOR {\textbf{each key} $k$ \textbf{in} $m$}
+				\IF {$\exists f(k)$}
+					\STATE $f(k) \gets 0$
+				\ENDIF
+				\STATE $f(k) \gets f(k) + m(k)$
+			\ENDFOR
+		\ENDFOR
+	\ENDFOR
+	\STATE \textbf{sort} $f$ \textbf{by value} 
+	\STATE $y \gets \{x \mid \exists f(x)\}$
+\end{algorithmic}
+\vspace{1em}
+
+对每个词语，首先从近义词词典查询其对应的近义词列表（由前文可知该列表可能包含该词语本身），若无结果，则说明该词语在所有商品文字的词语（及其近义词）中尚未出现，可以被安全忽略。否则，针对每一个近义词若词典之中有相应的项目其中所有商品编号对应的词频将会被累加到一个映射中，最后根据总词频对其进行排序，输出排序后的商品编号序列。
