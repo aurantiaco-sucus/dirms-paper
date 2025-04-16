@@ -1,0 +1,98 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.1.1 Chrome/132.0.6834.210 Electron/34.5.0 Safari/537.36" version="26.1.1">
+  <diagram name="第 1 页" id="NezcHk-GgCfE-3iPoTMn">
+    <mxGraphModel dx="1055" dy="853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-15" value="" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="440" y="20" width="110" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-2" target="VkDDVh5fXJpwhLeCUSFn-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-2" value="训练样本" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-3" target="VkDDVh5fXJpwhLeCUSFn-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-3" value="训练判别模型" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="180" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-5" target="VkDDVh5fXJpwhLeCUSFn-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-5" value="测试样本" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="180" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-6" target="VkDDVh5fXJpwhLeCUSFn-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-6" target="VkDDVh5fXJpwhLeCUSFn-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-6" value="验证判别模型" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-9" value="&lt;div&gt;PyTorch&lt;/div&gt;部署" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="460" y="40" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-10" value="OpenVINO&lt;div&gt;部署&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="460" y="120" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-12" target="VkDDVh5fXJpwhLeCUSFn-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-12" value="转换为&lt;div&gt;OpenVINO模型&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="320" y="120" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-16" value="判别模型" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="440" y="210" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-18" target="VkDDVh5fXJpwhLeCUSFn-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-18" target="VkDDVh5fXJpwhLeCUSFn-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-18" value="训练&lt;div&gt;开始&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="70" y="120" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-21" target="VkDDVh5fXJpwhLeCUSFn-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-21" value="请求&lt;div&gt;开始&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="220" y="200" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-22" target="VkDDVh5fXJpwhLeCUSFn-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="220" />
+              <mxPoint x="430" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-22" value="输入图片" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="300" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-25" target="VkDDVh5fXJpwhLeCUSFn-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-25" value="输出置信度" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
+          <mxGeometry x="585" y="200" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VkDDVh5fXJpwhLeCUSFn-15" target="VkDDVh5fXJpwhLeCUSFn-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="220" />
+              <mxPoint x="570" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VkDDVh5fXJpwhLeCUSFn-27" value="请求结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="600" y="120" width="70" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
