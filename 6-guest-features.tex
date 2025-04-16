@@ -119,16 +119,61 @@ AI导购专家实质上就是扮演导购身份，可以与用户进行多轮对
 
 \subsubsection{商品词典}
 
-商品的搜索实质上是检测商品的标题或说明之中是否含有搜索语句相关模式（词语），同时匹配程度（模式命中次数）较高者更可能符合搜索语句对应语义。在这种情况下，任意一次命中于原文中的位置语义上并无作用，故输出匹配位置的字符串搜索算法并不适合该用途。同时，这也意味着可以快速检测模式是否存在而不包含模式位置相关信息的词典（dictionary）是最适合该用途的数据结构。为了更好传达算法的思想，现列出并解释下文将要直接使用的一些操作：
+商品的搜索实质上是检测商品的标题或说明之中是否含有搜索语句相关模式（词语），同时匹配程度（模式命中次数）较高者更可能符合搜索语句对应语义。在这种情况下，任意一次命中于原文中的位置语义上并无作用，故输出匹配位置的字符串搜索算法并不适合该用途。同时，这也意味着可以快速检测模式是否存在而不包含模式位置相关信息的词典（dictionary）是最适合该用途的数据结构。为了更好传达算法的思想，现列出并解释下文将要直接使用的一些操作和类型：
 
 \begin{itemize}
-	\item \textbf{过滤文字：}该操作接受一个字符串，并返回该字符串移除除了Unicode规范\cite{unicode16.0}所定义的拉丁文字（Latin）、汉字（Han）、假名（Hiragana、Katakana）和谚文（Hangul）以外的文字的版本。
-	\item \textbf{扁平化：}该操作接受一个由同元素类型可空集合组成的可空集合，并返回一个由所有原集合中子集合所包含的元素组成的新集合。
+	\item $F_p$ \textbf{过滤（操作）：}该操作接受一个字符串，并返回该字符串移除除了Unicode规范\cite{unicode16.0}所定义的拉丁文字（Latin）、汉字（Han）、假名（Hiragana、Katakana）和谚文（Hangul）以外的文字的版本。
+	\item $F_e$ \textbf{扁平化（操作）：}该操作接受一个由同元素类型可空集合组成的可空集合，并返回一个由所有原集合中子集合所包含的元素组成的新集合。
+	\item $F_c$ \textbf{分词（操作）：}该操作接受一个字符串，返回字符串的词语集合。
+	\item \textbf{词典（类型）：}以字符串（词语或标记）为键，以\textit{以编号数值为键，以频率数值为值的映射}为值的映射类型。
 \end{itemize}
 
-以下为生成词典数据结构算法所对应的伪代码：
+以下为根据标记（token）集合生成本模块对应词典数据的算法：
+
+\vspace{1em}
+\begin{algorithmic}
+	\STATE \textbf{输入：}字符串的集合的序列 $x$
+	\STATE \textbf{输出：}词典 $y$
+	\STATE $y \gets \emptyset$
+	\FOR {\textbf{each} $s$ \textbf{in} $x$ \textbf{of index} $i$}
+		\FOR {\textbf{each} $c$ \textbf{in} $s$}
+			\IF {$\nexists y(c)$}
+				\STATE $y(c) \gets \emptyset$
+			\ENDIF
+			\IF {$\nexists y(c)(i)$}
+				\STATE $y(c)(i) \gets 0$
+			\ENDIF
+			\STATE $y(c)(i) = y(c)(i) + 1$
+		\ENDFOR
+	\ENDFOR
+\end{algorithmic}
+\vspace{1em}
+
+可见该算法遍历了每个条目（商品）对应的字符串（关键词），并对每个关键词在不同商品中的出现进行计数，以此来统计每个关键词与不同商品的关联程度。值得注意的是，该算法对每个商品的输入要求是关键词的集合，根据每个商品的名称和说明生成词语序列的算法如下：
+
+\vspace{1em}
+\begin{algorithmic}
+	\STATE \textbf{输入：}商品名称和说明的二元组的序列 $x$
+	\STATE \textbf{输出：}字符串的集合的序列 $y$
+	\STATE $y \gets \emptyset$
+	\FOR {\textbf{each} $(a, b)$ \textbf{in} $x$ \textbf{of index} $i$}
+		\STATE $s \gets F_e(F_c(a) \cup F_c(b))$
+		\STATE $s \gets \{F_p(x) \mid x \in s\}$
+		\STATE $s \gets \{x \in s \mid x \neq \emptyset\}$
+		\STATE $y \gets y \cup \{s\}$
+	\ENDFOR
+\end{algorithmic}
 
 \subsubsection{AI近义词搜寻}
+
+为了缓解上文提及的搜索算法无法理解搜索语句（及其单独词语）的语义从而无法搜索到意思相关的词语的问题，此处设计利用大语言模型优秀的自然语言处理能力进行前文提及的词典的拓展。考虑到词语数量可能较为庞大，云端处理的成本是较大的，此处使用本地部署的 \verb|qwen2.5-3b| 模型，提示词对话如下：
+
+\begin{itemize}
+	\item[] \textbf{用户：}输出这个词语的所有近义词为JSON字符串集合，不要输出无关内容：
+	\item[]（原词语）
+\end{itemize}
+
+通过在所有词语上重复该操作，并指定模型输出格式（schema）为JSON字符串数组，可以获得每个词语对应的近义词集合。此外，通过多次执行在所有词语上的遍历可以增加获得到的近义词集合的大小。
 
 \subsubsection{近义词词典}
 
