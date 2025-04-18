@@ -5,16 +5,13 @@
     * 启动yolod rmg-yolod
     * 启动RmAnalysis rmg-rma
 * RmAdmin
+    * 首页 rma-index
     * 图片管理
         * 上传图片 rma-im-add
         * 查询图片 rma-im-as
     * 商品管理
         * 创建商品 rma-prod-add
-        * 修改商品 rma-prod-mut
-        * 删除商品 rma-prod-rm
         * 查询商品 rma-prod-as
-        * AI商品描述生成 rma-ai-desc
-        * AI商品价格生成 rma-ai-price
         * AI商品批量生成 rma-ai-bulk
     * 库存管理
         * 制定进货计划 rma-ir-plan
