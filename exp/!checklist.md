@@ -22,7 +22,8 @@
         * 设置条码 rma-bc
         * 设置推荐商品 rma-feat
 * RmAnalysis
-    * 查看超市范例 demo-grocery
+    * 基本界面 aly-core
+    * 查看超市范例 aly-demo
 * ShopEyes Owner
     * 上传本地图片 seo-local
     * 上传拍照 seo-camera
