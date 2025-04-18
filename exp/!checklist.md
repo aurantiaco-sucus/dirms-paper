@@ -36,9 +36,7 @@
     * 创建数据集 ed-nd
     * 创建类别 ed-nc
     * 单次拍照 ed-shot
-    * 连拍 ed-burst
-    * 删除照片 ed-rm
-    * 标记照片为测试 ed-mark
+    * 浏览图片 ed-view
 * EasyCheckout
     * 条码结算 ec-bc
     * 称重调零 ec-tare
