@@ -25,12 +25,14 @@
     * 基本界面 aly-core
     * 查看超市范例 aly-demo
 * ShopEyes Owner
+    * 菜单 seo
     * 上传本地图片 seo-local
     * 上传拍照 seo-camera
     * 点货 seo-audit
 * ShopEyes Guest
     * 搜索商品 seg-tx
     * 浏览推荐商品 seg-feat
+    * 查看商品详情 seg-detail
     * 询问AI导购 seg-assist
 * EasyDataset
     * 创建数据集 ed-nd
