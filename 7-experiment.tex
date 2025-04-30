@@ -223,6 +223,7 @@ RmAdmin是该设计所对应的商家端（即“后台管理”）应用程序�
 通过前文提及RmGuard应用程序管理的RmAnalysis服务用于分析销售数据。通过访问服务的网页入口，用户可以访问到如图 \ref{fig:aly-core} 所示的分析主页、准备界面。用户可以利用会话ID（会话完成时间）打开先前保存的分析报告，也可以创建新的报告。在准备界面，用户可以自定义分析数据的时间范围（或者从画面中央的按钮快速选择），并制定需要分析的数值对象。以下为通过利用前文提及的超市销售数据数据集进行生成的图表和报告。
 
 \begin{figure}[htbp]
+    \centering
     \subfloat{\includegraphics[width=0.4\textwidth]{./exp/aly-demo-1.png}}
     \subfloat{\includegraphics[width=0.4\textwidth]{./exp/aly-demo-2.png}}
 	\caption{RmAnalysis运行效果：热力图分析}
@@ -232,6 +233,7 @@ RmAdmin是该设计所对应的商家端（即“后台管理”）应用程序�
 如图 \ref{fig:aly-demo-a} 所示，用户在热力图上可以通过观察该图表来获知营业收入（或者用户指定的任何其他变量）在一天中的变化规律（$x$ 轴），同时可以在另一个轴看到利用另外一个（可以被天整除的，更长的）时间跨度（如周、月）上的规律变化。用户同时也可以从图表下侧的由AI生成的报告获得关于该图表的深入分析及与图表内容相关的营运建议以供参考。从AI给出的分析和报告上可知，在此AI顺利理解的该图表的基本要义并作出了较为精确的分析，并且提出了具体的、可以参考的建议。
 
 \begin{figure}[htbp]
+    \centering
     \subfloat{\includegraphics[width=0.4\textwidth]{./exp/aly-demo-3.png}}
     \subfloat{\includegraphics[width=0.4\textwidth]{./exp/aly-demo-4.png}}
 	\caption{RmAnalysis运行效果：框图分析}
@@ -310,9 +312,9 @@ ShopEyes移动应用程序的顾客（Guest）端用于基于消费者商品信�
 
 \begin{figure}[htbp]
     \centering
-    \subfloat{\includegraphics[width=0.33\textwidth]{./exp/seg-assist-1.png}}
+    \subfloat{\includegraphics[width=0.25\textwidth]{./exp/seg-assist-1.png}}
     \hfill
-    \subfloat{\includegraphics[width=0.33\textwidth]{./exp/seg-assist-2.png}}
+    \subfloat{\includegraphics[width=0.25\textwidth]{./exp/seg-assist-2.png}}
 	\caption{ShopEyes运行效果：AI导购}
 	\label{fig:seg-assist}
 \end{figure}
@@ -323,13 +325,13 @@ ShopEyes移动应用程序的顾客（Guest）端用于基于消费者商品信�
 
 \begin{figure}[htbp]
     \centering
-    \subfloat{\includegraphics[width=0.45\textwidth]{./exp/ec-tare.png}}
+    \subfloat{\includegraphics[width=0.4\textwidth]{./exp/ec-tare.png}}
     \hfill
-    \subfloat{\includegraphics[width=0.45\textwidth]{./exp/ec-bc.png}}
+    \subfloat{\includegraphics[width=0.4\textwidth]{./exp/ec-bc.png}}
     \vspace{1em}
-    \subfloat{\includegraphics[width=0.45\textwidth]{./exp/ec-wr-1.png}}
+    \subfloat{\includegraphics[width=0.4\textwidth]{./exp/ec-wr-1.png}}
     \hfill
-    \subfloat{\includegraphics[width=0.45\textwidth]{./exp/ec-wr-2.png}}
+    \subfloat{\includegraphics[width=0.4\textwidth]{./exp/ec-wr-2.png}}
 	\caption{EasyCheckout运行效果}
 	\label{fig:ec}
 \end{figure}
