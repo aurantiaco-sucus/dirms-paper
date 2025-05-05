@@ -161,7 +161,14 @@
 
 明显地，“先观察再分析”（下称“先观察”，另一种方法同理）的方法需要的时间是显著更长的，但也有机会可以降低在多模态模型上花费的额外成本并利用专门的文本大模型提高生成效果。本设计所对应分析程序利用“百炼”平台托管使用dashscope应用程序接口的 \verb|qwen-vl-max-latest| 商业模型作为多模态模型，。
 
-因为两个热力图各包含了三维（$x$、$y$和强度）的数据，密度较高并且逻辑比较复杂，此处使用“先观察”方式来尽可能达到最优效果。观察部分的提示词如下：
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.8\textwidth, height=0.3\textheight, keepaspectratio]{./imgs/aly-grocery-xtod-ydow-vquantity.png}
+	\caption{用于分析的热力图示例}
+	\label{fig:heat-graph}
+\end{figure}
+
+因为两个热力图（如图 \ref{fig:heat-graph} ）各包含了三维（$x$、$y$和强度）的数据，密度较高并且逻辑比较复杂，此处使用“先观察”方式来尽可能达到最优效果。观察部分的提示词如下：
 
 \begin{itemize}
     \item[] \textbf{用户：}

@@ -240,7 +240,16 @@ hyperindex, plainpages=false]{hyperref}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-
+\AtBeginBibliography{
+    \zihao{-4} % 这个指令也能设置字号为小四，即12pt，这个是ctex宏包的指令
+    %\fontsize{12pt}{23pt}\selectfont % 这个也能设置字体行距，和上面二选一就行
+    \setlength{\baselineskip}{23pt}  % 直接设置行距为 23pt
+}
+\AtBeginDocument{
+    \zihao{-4} % 这个指令也能设置字号为小四，即12pt，这个是ctex宏包的指令
+    %\fontsize{12pt}{23pt}\selectfont % 这个也能设置字体行距，和上面二选一就行
+    \setlength{\baselineskip}{23pt}  % 直接设置行距为 23pt
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

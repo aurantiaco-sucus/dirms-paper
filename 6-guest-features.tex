@@ -130,7 +130,7 @@ AI导购专家实质上就是扮演导购身份，可以与用户进行多轮对
 以下为根据标记（token）集合生成本模块对应词典数据的算法：
 
 \vspace{1em}
-\begin{algorithmic}
+\begin{algorithmic}[1]
 	\STATE \textbf{输入：}字符串的集合的序列 $x$
 	\STATE \textbf{输出：}词典 $y$
 	\STATE $y \gets \emptyset$
@@ -151,7 +151,7 @@ AI导购专家实质上就是扮演导购身份，可以与用户进行多轮对
 可见该算法遍历了每个条目（商品）对应的字符串（关键词），并对每个关键词在不同商品中的出现进行计数，以此来统计每个关键词与不同商品的关联程度。值得注意的是，该算法对每个商品的输入要求是关键词的集合，根据每个商品的名称和说明生成词语序列的算法如下：
 
 \vspace{1em}
-\begin{algorithmic}
+\begin{algorithmic}[1]
 	\STATE \textbf{输入：}商品名称和说明的二元组的序列 $x$
 	\STATE \textbf{输出：}字符串的集合的序列 $y$
 	\STATE $y \gets \emptyset$
@@ -182,24 +182,24 @@ AI导购专家实质上就是扮演导购身份，可以与用户进行多轮对
 现定义类型“近义词词典”为从词汇到其近义词集合的映射。为了便于实现搜索算法，现定义任何一个词语都是其本身的近义词，因此近义词词典的初始化方法是获取词典中的全部词语，并构建一个对全部词语，以该词语作为输入得到只有这个词语一个元素的集合的映射。生成近义词词典算法如下：
 
 \vspace{1em}
-\begin{algorithmic}
+\begin{algorithmic}[1]
 	\STATE \textbf{输入：}AI模型生成的近义词词典 $x_1$ ；词典 $x_2$
 	\STATE \textbf{输出：}近义词词典 $y$
 	\STATE $y \gets \emptyset$
 	\FOR {\textbf{each key} $k$ \textbf{in} $x_2$}
-		\STATE $y(k) \gets \{k\}$
+		\STATE $y(k) \gets \{k\}$ \textit{（初始化词语为其自身的近义词）}
 	\ENDFOR
-	\STATE $\hat{y} \gets \{x \mid \exists y(x), \lvert x \rvert \geq 4 \}$
+	\STATE $\hat{y} \gets \{x \mid \exists y(x), \lvert x \rvert \geq 4 \}$ \textit{（提取映射中字节长度大于4的键）}
 	\FOR {\textbf{each key} $k$ \textbf{in} $y$}
-		\STATE $\hat{y}_k \gets \{x \in \hat{y} \mid k \supset x \}$
-		\STATE $y(k) \gets y(k) \cup F_e(\{y(x) \mid x \in \hat{y}_k\})$
+		\STATE $\hat{y}_k \gets \{x \in \hat{y} \mid k \supset x \}$ \textit{（将被自身包括的词语添加到候选）}
+		\STATE $y(k) \gets y(k) \cup F_e(\{y(x) \mid x \in \hat{y}_k\})$ \textit{（添加这些词语的近义词到集合）}
 	\ENDFOR
 	\FOR {\textbf{each key} $k$ \textbf{in} $y$ \textbf{if} $\lvert k \rvert \geq 4$ \textbf{and} $x_1$}
 		\FOR {\textbf{each} $v$ \textbf{in} $y(k)$}
 			\IF {$\nexists y(v)$}
 				\STATE $y(v) \gets \emptyset$
 			\ENDIF
-			\STATE $y(v) \gets y(v) \cup \{k\}$
+			\STATE $y(v) \gets y(v) \cup \{k\}$ \textit{（将目标词语添加到其每个近义词的近义词列表）}
 		\ENDFOR
 	\ENDFOR
 \end{algorithmic}
@@ -212,12 +212,12 @@ AI导购专家实质上就是扮演导购身份，可以与用户进行多轮对
 在部署到服务器的搜索算法中，顾客发出的搜索语句首先会被分词和过滤，经过这些操作之后剩余的词语将会被用于实际匹配，搜索算法如下：
 
 \vspace{1em}
-\begin{algorithmic}
+\begin{algorithmic}[1]
 	\STATE \textbf{输入：}近义词词典 $s$ ；词典 $d$ ；搜索词集合 $x$
 	\STATE \textbf{输出：}按匹配程度排序的商品编号序列 $y$
 	\STATE $f \gets \emptyset$
 	\FOR {\textbf{each} $w$ \textbf{in} $x$}
-		\IF {$\exists s(w)$}
+		\IF {$\nexists s(w)$}
 			\STATE \textbf{continue}
 		\ENDIF
 		\STATE $a \gets s(w)$
@@ -230,7 +230,7 @@ AI导购专家实质上就是扮演导购身份，可以与用户进行多轮对
 				\IF {$\exists f(k)$}
 					\STATE $f(k) \gets 0$
 				\ENDIF
-				\STATE $f(k) \gets f(k) + m(k)$
+				\STATE $f(k) \gets f(k) + m(k)$ \textit{（关键词对应每个商品的权重累加到已有值）}
 			\ENDFOR
 		\ENDFOR
 	\ENDFOR
